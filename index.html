@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
   <title>Joseph Morlin</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/camera.png" >
   <link rel='stylesheet' type='text/css' href='style.css'>
+ 
 </head>
 <body>
   <!-- Site Header -->
+  
   <section role="region" class="photo-hero">
     <header role="banner" aria-label="site navigation" class="header">
       <!-- Site Navigation -->
-      <nav role="navigation" class="site-navigation">
-        <ul class="site-header-left">
-          <li>
+      <div class ='instagram'>
+        <a href="https://www.instagram.com/joemorlin/" target="_blank"><img src="images/instagram.png" width= "50px" height= "50px"></a>
+       
         
-        <a href="https://www.instagram.com/joemorlin/" target="_blank"><img src="images/instagram.png" width= 50px height= 50px></a>
-          </li>
+        </div>
+      <nav role="navigation" class="site-navigation">
+        
+        <ul class="site-header-left">
+       
+    
         </ul>
         <ul class="site-header-right">
           <li>
-            <a href="#about">Biography</a>
+            <a href="#about">Model Info</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -30,7 +37,7 @@
     <div class="container">
       <div class="photo-hero-text">
         <h1>Joseph Morlin <span>Professional Model</span></h1>
-        <p>Joseph Carlos Morlin is a professional male model with Colours agency.  Currently Based in Scotland, Joseph is available for both commerical and private photoshoots and events</p>
+        <p>Joseph Morlin is a professional male model with Colours agency.  Currently Based in Scotland, Joseph is available independently for both commerical and private photoshoots and events</p>
         <a href="https://www.coloursagency.com/faces/joseph-morlin/" target= Blank_ class="button button-primary">View My Work at Colours Agency</a>
       </div>
     </div>
@@ -38,50 +45,77 @@
   <!-- Site Main Content -->
   <main role="main">
     <!-- PHOTO GRID -->
-    <section role="region" aria-label="photo-grid" class="photo-grid">
-      <div class="container">
-        <div class="image-box">
-          <img src="images/purple shirt.png" />
+    <section role="region" aria-label="photo-grid" class="photo-box">
+
+      <div class="row">
+        <div class="column">
+          <img src="images/joearcade.jpeg" id="myImg">
+          <img src="images/addidasgirl.jpeg" id ="myImg">
+          <img src="images/doublecoat.jpeg">
+          <img src="images/nakedjoe.jpeg">
+          
         </div>
-        <div class="image-box">
-          <img src="images/Joseph_Morlin_004.jpeg" />
+        <div class="column">
+          <img src="images/jumper b*w.png">
+          <img src="images/vertical b& w.png">
+          <img src="images/Joseph_Morlin_004.jpeg">
+          <img src="images/suit b*w.png">
+          <img src="images/joeblackandwhitecoolpose.jpeg">
         </div>
-        <div class="image-box">
-          <img src="images/b*w.png" />
+        <div class="column">
+          <img src="images/b*w.png">
+          <img src="images/chav hair.png">
+          <img src="images/josronaldo.jpeg">
+          <img src="images/underwear b * w.png">
+          <img src="images/purple shirt.png">
+          
         </div>
-        <div class="image-box">
-          <img src="images/chav hair.png" />
-        </div>
-        <div class="image-box">
-          <img src="images/suit b*w.png" />
-        </div>
-        <div class="image-box">
-          <img src="images/vertical b& w.png" />
-        </div>
-        <div class="image-box">
-          <img src="images/jumper b*w.png" />
-        </div>
-        <div class="image-box">
-          <img src="images/checkeredshirt.jpeg" />
-        </div>
-        <div class="image-box">
-          <img src="images/doublecoat.jpeg" />
+        <div class="column">
+          <img src="images/chav.png">
+          <img src="images/checkeredshirt.jpeg">
+          <img src="images/nike b*w.png">
+          <img src="images/sadjoe.jpeg">
+         
         </div>
       </div>
     </section>
-  
+  <!-- Trigger the Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
 
     
     <!-- VIDEO -->
+    
+    <span class="joe-group">
+    <img src="images/joe with girl.png">
+    <img src="joe with boys.png">
+    </span>
+  
     <div class="video">
       <h2>Video</h2>>
-      <video src="video/IMG_0154.m4v" controls width="650" height="600" autoplay loop muted> video not supported</video>
-  </div> 
+      <video src="video/IMG_0154.m4v" controls width="100%" height="600" autoplay loop muted> video not supported</video>
+      </div>
+    
+  
+
+  
+
     <!-- ABOUT ME -->
     <div id="about"></div>
     <section role="region" class="photo-about">
       <div class="container">
-        <h2>Biography</h2>
+        <h2>Model Info</h2>
       
       <p><strong>Height:</strong>  6' 1"<br>
         <strong>Chest:</strong>
@@ -113,14 +147,14 @@
           <input type="email" placeholder="Email Address">
           <input type="phone" placeholder="Phone Number">
           <input type="text" placeholder="Requested Date">
-          <textarea placeholder="Something"></textarea>
+          <textarea placeholder="Write your message here"></textarea>
           <button type="submit" class="button button-primary">Send</button>
         </form>
       </div>
     </section>
   </main>
 
-
+  <script src="style.js"></script>
   <!-- Site Footer -->
   <footer role="contentinfo" class="footer clearfix">
     <!-- Site Footer Nav -->
